@@ -71,7 +71,7 @@ background-image: url(back.jpg);
     left: 500px;
     top: 30px;
 }
-@media screen and (max-width:212px) {
+@media screen and (max-width:600px) {
     .meme-author{
         display: none;
     }
