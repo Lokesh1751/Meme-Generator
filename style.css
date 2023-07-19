@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@400;900&family=Lobster&display=swap');
+.meme-generator{
+    font-family: 'Bodoni Moda', serif;
+    font-family: 'Lobster', cursive;
+    text-align: center;
+    color: white;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.meme-title{
+    margin-bottom: 10px;
+}
+.meme-generator img{
+    height: 680px;
+    width: 700px;
+    width: fit-content;
+    object-fit: cover;
+    border: 3px solid black;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+.meme-generator img:hover{
+    box-shadow:0 0 3px black;
+}
+.generate-meme-btn{
+    padding: 8px 20px;
+    border: none;
+    border-left: 4px solid darkgray;
+    border-right: 4px solid darkgray;
+    margin: 24px 0;
+    font-size: 20px;
+    color: rgb(155, 1, 155);
+    background-color: white;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    font-family: 'Bodoni Moda', serif;
+    font-family: 'Lobster', cursive;
+    font-size: 30px;
+
+}
+.generate-meme-btn:hover{
+    padding: 8px 36px;
+    border-left: 8px solid #222;
+    border-right: 8px solid #222;
+    letter-spacing: 3px;
+}
+.meme-author{
+    margin: 8px;
+    color: white;
+    font-family: 'Bodoni Moda', serif;
+    font-family: 'Lobster', cursive;
+    font-size: 30px;
+    position: absolute;
+    left: 30px;
+    top: 30px;
+
+}
+body{
+background-image: url(back.jpg);
+    background-repeat: no-repeat;
+   background-size: 1500px;
+   backdrop-filter: blur(4px);
+}
+#im{
+    width: 200px;
+    height: 50px;
+    position: absolute;
+    left: 500px;
+    top: 30px;
+}
+@media screen and (max-width:412px) {
+    .meme-author{
+        display: none;
+    }
+    #meme-img{
+        width: 400px;
+        height: 400px;
+    }
+}
